@@ -6,7 +6,7 @@ var score = 0;
 var myReadLineSync = require('readline-sync');
 var userName = myReadLineSync.question("What's Your Name ?");
 console.log();
-console.log("Welcome to the Football quiz",userName);
+console.log("Welcome to the Football quiz", userName);
 console.log("........................................");
 
 const queAnsArr = [
@@ -52,27 +52,27 @@ const queAnsArr = [
     b) Ronaldo
     c) Kaka
     d) Messi `,
-    answer: "d"   
+    answer: "d"
   }
 ];
 
 function footyQuiz(question, answer) {
   var userAns = myReadLineSync.question(question);
 
-  if(userAns === answer) {
+  if (userAns === answer) {
     console.log("Yes, It's the right answer.");
     score++;
-    
+
   } else {
     console.log("Sorry, That's not the right answer. The right answer is: ", answer);
   }
-  console.log("Your score is: ",score);
+  console.log("Your score is: ", score);
   console.log("...............................................................")
-  
+
 }
 
-function quiz(){
-  for(var i=0; i < queAnsArr.length; i++) {
+function quiz() {
+  for (var i = 0; i < queAnsArr.length; i++) {
     var currentQue = queAnsArr[i];
     footyQuiz(currentQue.question, currentQue.answer)
   }
@@ -80,4 +80,8 @@ function quiz(){
 
 quiz();
 console.log()
-console.log("Your final score is: ",score)
+console.log("Your final score is: ", score)
+
+
+
+// ........
