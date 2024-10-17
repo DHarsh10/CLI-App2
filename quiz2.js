@@ -85,3 +85,4 @@ console.log("Your final score is: ", score)
 
 
 // ........
+// ...footyQuiz.apply.apply.
